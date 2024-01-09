@@ -112,14 +112,12 @@ body::-webkit-scrollbar-thumb {
 nav {
     top: 0;
     position: static;
-    background-color: #f1f1f1;
-    font: var(--avm-font-monospace-a);
-    font-size: 0.10em;
+    background-color: var(--avm-css-gradient);
+    font: monospace;
     box-shadow: -2px 3px 10px navy;
     padding: 0.3vh;
-    margin: 0.1vh;
     width: 100vw;
-    height: 4vh;
+    height: 8vh;
     z-index: 3;
 }
 .avn-nav-search {
@@ -157,8 +155,7 @@ float: bottom;
     height: 8vh;
     width: 100%;
     bottom: 0;
-    box-shadow: 2px -3px 10px navy;
-    background: var(--avm-css-taskbar);
+    box-shadow: 2px -3px 10px navy;
     z-index: 3;
     display:flex;
     flex-direction: row;
@@ -171,6 +168,9 @@ taskbar button {
     padding: 0.01vw;
     text-shadow: 1px 1px whitesmoke;
     background: var(--avm-css-taskbar);
+}
+taskbar button:hover{
+    background:var(--avm-css-gradient);
 }
 embed{
     border-radius: 5px;
