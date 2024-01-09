@@ -70,10 +70,10 @@
     box-sizing: border-box;
 }
 
-avm{
+html{
     scroll-behavior: smooth;
 }
-avm,
+html,
 body {
     padding: 0;
     margin: 0;
@@ -120,7 +120,7 @@ nav {
     margin: 0.1vh;
     width: 100vw;
     height: 4vh;
-    z-index: 4444;
+    z-index: 3;
 }
 .avn-nav-search {
     height: 35px;
@@ -140,7 +140,7 @@ nav {
     left: 0;
     background: var(--avm-image-icon) center;
     background-repeat: no-repeat;
-    z-index: 9998;
+    z-index: 2;
 }
 #avmFrameMain {
     object-fit: scale-down;
@@ -152,23 +152,25 @@ nav {
     background: var(--avm-css-bg);
 }
 taskbar{
-    position: fixed;
-    object-position: center;
+float: bottom;
+    position: fixed;
     height: 8vh;
     width: 100%;
-    bottom: 0;
-    padding: 0.5rem;
+    bottom: 0;
     box-shadow: 2px -3px 10px navy;
     background: var(--avm-css-taskbar);
-    z-index: 9998;
+    z-index: 3;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 taskbar button {
     float: center;
-    border-radius: 5px;
-    max-height: 25em;
-    max-width: 25em;
-    padding: 0.5rem;
+    border:0;
+    height: 100%;
+    padding: 0.01vw;
     text-shadow: 1px 1px whitesmoke;
+    background: var(--avm-css-taskbar);
 }
 embed{
     border-radius: 5px;
