@@ -112,7 +112,7 @@ body::-webkit-scrollbar-thumb {
 nav {
     top: 0;
     position: static;
-    background-color: var(--avm-css-gradient);
+    background-color: var(--avm-css-taskbar);
     font: monospace;
     box-shadow: -2px 3px 10px navy;
     padding: 0.3vh;
@@ -167,10 +167,9 @@ taskbar button {
     height: 100%;
     padding: 0.01vw;
     text-shadow: 1px 1px whitesmoke;
-    background: var(--avm-css-taskbar);
 }
 taskbar button:hover{
-    background:var(--avm-css-gradient);
+    background:var(--avm-css-taskbar);
 }
 embed{
     border-radius: 5px;
@@ -244,4 +243,8 @@ embed{
     width: 12rem;
     height: 12rem;
     border: 0px;
+}
+.btn{
+   padding: 0.1vh;
+   border-radius:0.33vw;
 }
